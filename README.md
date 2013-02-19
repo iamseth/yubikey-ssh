@@ -1,7 +1,7 @@
 yubikey-ssh
 ===========
 
-#Installation
+##Installation
 
 - Install the RPM
 

@@ -54,4 +54,8 @@ if __name__== '__main__':
     handler = logging.handlers.SysLogHandler(address = '/dev/log')
     handler.setFormatter(logging.Formatter('%(name)s: %(levelname)s %(message)s'))
     log.addHandler(handler)
-    verify()
+    try:
+        verify()
+    except KeyboardInterrupt:
+        print
+        sys.exit(127)
